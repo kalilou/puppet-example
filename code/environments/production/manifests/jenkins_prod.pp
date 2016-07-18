@@ -3,12 +3,6 @@ class jenkins_install {
 
  	include jenkins
 
-    jenkins::user { 'vagrant':
-       email    => 'vagrant@example.com',
-       password => 'vagrant',
-     }
-
-
     jenkins::plugin {
     	'git': version => 'lastest'
     }
